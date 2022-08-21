@@ -5,8 +5,8 @@ const CartBtn = () => {
   const cart = useSelector(state => state.cart)
   return (
     <>
-        <NavLink to="/" className='btn btn-outline-primary ms-2'>
-            <i className="fa fa-shopping-cart"></i> Cart ()
+        <NavLink to="/cart" className='btn btn-outline-primary ms-2'>
+            <i className="fa fa-shopping-cart"></i> Cart({cart.length})
         </NavLink>
     </>
   )

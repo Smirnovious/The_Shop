@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import ProductDetail from './ProductDetail';
+
 
 const Product = () => {
   const [productsList, setProductsList] = useState([]);
