@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,  } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Product from './Product';
 const Home = () => {
   const [index, setIndex] = useState(0);
 
+    
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -48,7 +49,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    <Product/>
+    <Product />
     </>
   )
 }

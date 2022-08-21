@@ -34,7 +34,7 @@ const Login = () => {
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check type="checkbox" label="Remember Me" />
       </Form.Group>
       <Button variant="btn btn-outline-primary w-100" type="submit">
         Submit
