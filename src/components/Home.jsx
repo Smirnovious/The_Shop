@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Product from './Product';
 const Home = () => {
   const [index, setIndex] = useState(0);
 
@@ -47,7 +48,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-
+    <Product/>
     </>
   )
 }
