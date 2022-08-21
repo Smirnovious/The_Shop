@@ -5,3 +5,13 @@
 .navbar-brand {
     letter-spacing: 3px;
 }
+
+/* Card */
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+}

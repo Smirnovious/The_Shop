@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-
-
+import 'font-awesome/css/font-awesome.css';
 const Login = () => {
   const [show, setShow] = useState(false);
 
@@ -12,13 +11,13 @@ const Login = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Login
+      <Button variant="primary ms-auto" onClick={handleShow}>
+       Login
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <Form>
@@ -37,18 +36,11 @@ const Login = () => {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="btn btn-outline-primary w-100" type="submit">
         Submit
       </Button>
     </Form></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+    
       </Modal>
     </>
   );

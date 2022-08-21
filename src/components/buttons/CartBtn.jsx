@@ -1,8 +1,13 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const CartBtn = () => {
   return (
-    <div>CartBtn</div>
+    <>
+        <NavLink to="/" className='btn btn-outline-primary ms-2'>
+            <i className="fa fa-shopping-cart"></i> Cart ()
+        </NavLink>
+    </>
   )
 }
 

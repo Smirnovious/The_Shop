@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Login from './buttons/Login'
+import Signup from './buttons/Signup'
+import CartBtn from './buttons/CartBtn'
+
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
@@ -28,9 +32,12 @@ const Header = () => {
        
         
       </ul>
-    </div>
-    <NavLink className="navbar-brand mx-auto fw-bold" to="#">The Shop</NavLink>
+      <NavLink className="navbar-brand mx-auto fw-bold" to="#">The Shop</NavLink>
     <Login />
+    
+    <CartBtn />
+    </div>
+   
   </div>
 </nav>
   )
