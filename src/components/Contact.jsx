@@ -26,7 +26,7 @@ const Contact = () => {
         <Form.Control type="email" placeholder="name@example.com" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Label>What's your Question/s?</Form.Label>
         <Form.Control as="textarea" rows={5} />
       </Form.Group>
       <button className="btn btn-outline-primary" type="submit">Send Message</button>

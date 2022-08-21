@@ -19,7 +19,7 @@ const Header = () => {
           <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/products">Product</NavLink>
+          <NavLink className="nav-link" to="/products">Products</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/about">About</NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
        
         
       </ul>
-      <NavLink className="navbar-brand mx-auto fw-bold" to="#">The Shop</NavLink>
+      <NavLink className="navbar-brand mx-auto fw-bold" to="#">Shop With Alex</NavLink>
     <Login />
     
     <CartBtn />
