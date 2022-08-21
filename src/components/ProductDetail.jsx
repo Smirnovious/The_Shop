@@ -27,7 +27,7 @@ const ProductDetail = () => {
     if(cartBtn === "Add to Cart"){
       dispatch(addItem(product));
       setCartBtn("Remove from Cart");
-    }else{
+     }else{
       dispatch(deleteItem(product));
       setCartBtn("Add to Cart");
     }

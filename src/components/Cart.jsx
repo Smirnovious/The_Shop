@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import { deleteItem } from '../Redux/cartSlice'
+
 const Cart = () => {
   const cart = useSelector(state => state.cart)
   const dispatch = useDispatch()
@@ -44,12 +45,12 @@ const Cart = () => {
         return (
             <div className="container">
                 <div className="row">
-                    <NavLink className='btn'>Proceed To Checkout</NavLink>
+                    <NavLink to="/checkout" className='btn btn-outline-primary mb-5 w-25 mx-auto'>Proceed To Checkout</NavLink>
                 </div>
             </div>
         );
     }
-    
+
   return (
     <>
         {cart.length === 0 && emptyCart()}
